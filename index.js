@@ -6,7 +6,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors())
 const LoginData = require("./LoginData")
-const RegisterData=require(".RegisterData")
+const RegisterData=require("./RegisterData")
 const Workerregister=require("./Workerregister")
 const AgriData=require("./AgriData")
 app.get("/",(req,res)=>{
