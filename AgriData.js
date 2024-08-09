@@ -10,8 +10,8 @@ async function AgriData() {
         console.log('Connected to MongoDB');
 
         const db = client.db("facility-management");
-        const collection = db.collection("workers");
-        const data = await collection.find().toArray()
+        const collection = db.collection("users");
+        const data = await collection.find({skills:"Agriculture"}).toArray()
         console.log('Data retrieved successfully from Agriculture');
         return data;
     } catch (error) {
