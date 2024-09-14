@@ -11,7 +11,7 @@ const LoginData = require("./LoginData")
 const RegisterData=require("./RegisterData")
 const Workerregister=require("./Workerregister")
 const Data=require("./Data");
-const profileData  = require("./Profiledata");
+const profileData  = require("./ProfileData");
 app.get("/",(req,res)=>{
     res.send("hello from server")
 })
