@@ -73,7 +73,7 @@ app.get("/",(req,res)=>{
 
     app.get("/profile", async (req, res) => {
         const username = req.query.username; // Get username from query params
-        const userProfile = await profileData(username);
+        const userProfile = await profiledata(username);
         res.json(userProfile);
     });
     // retrieve data
