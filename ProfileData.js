@@ -25,4 +25,4 @@ async function ProfileData(username) {
     }
 }
 
-module.exports = profileData;
+module.exports = ProfileData;
