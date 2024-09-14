@@ -1,6 +1,6 @@
 const { MongoClient } = require("mongodb");
 
-async function profileData(username) {
+async function ProfileData(username) {
     var client;
     try {
         const uri = "mongodb+srv://kumar:Kumar123@facility-management.f7no7z2.mongodb.net/?retryWrites=true&w=majority&appName=facility-management";
