@@ -12,7 +12,6 @@ async function LoginData(email,password) {
         const db = client.db("facility-management");
         const collection = db.collection("users");
         const data = await collection.findOne({ email: email, password: password})
-
         console.log('Data retrieved successfully from login');
         return data;
     } catch (error) {
