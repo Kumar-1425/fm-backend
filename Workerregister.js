@@ -7,7 +7,7 @@ async function RegisterData(data) {
         await client.connect();
         console.log('Connected to MongoDB');
         const db = client.db("facility-management");
-        const collection = db.collection("workers");
+        const collection = db.collection("users");
         const check = await collection.findOne({ email: data.email })
         console.log('Data retreived successfully');
           if(check){
